@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Study.Projects.Ch3Task2
 {
+    /// <summary>
+    /// Write a program where user user enters two integers consecutively. 
+    /// The program determines which of the numbers is greater than or equal to, 
+    /// and displays a message. Use exception handling.
+    /// </summary>
     internal class Ch3Task2
     {
-        /// <summary>
-        /// Write a program where user user enters two integers consecutively. 
-        /// The program determines which of the numbers is greater than or equal to, 
-        /// and displays a message. Use exception handling.
-        /// </summary>
         public static void Main()
         {
             int firstNumber, secondNumber;
