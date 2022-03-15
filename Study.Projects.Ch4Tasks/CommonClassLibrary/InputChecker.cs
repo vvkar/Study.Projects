@@ -2,7 +2,7 @@
 
 namespace Ch4Tasks
 {
-    class InputChecker
+    public class InputChecker
     {
         /// <summary>
         /// Displays an input message and accepts the value that the user has entered.
