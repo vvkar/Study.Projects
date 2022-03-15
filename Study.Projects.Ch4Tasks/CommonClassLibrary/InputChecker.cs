@@ -47,5 +47,19 @@ namespace Ch4Tasks
             };
             return result;
         }
+
+        public static int MoreThenOneInputCheck(string input)
+        {
+            string moreThenOneError = "Your number shoul be more then one!";
+            
+            int result = PositiveIntInputCheck(input);
+            
+            if(result <= 1)
+            {
+                Console.WriteLine(moreThenOneError);
+                result = MoreThenOneInputCheck(InputEnter());
+            }
+            return result;
+        }
     }
 }
