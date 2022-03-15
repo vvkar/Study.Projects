@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ch4Task5
+namespace Ch4Tasks
 {
     class InputChecker
     {

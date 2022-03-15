@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ch4Task1
+namespace Ch4Tasks
 {
     /// <summary>
     /// Write a program, where a one-dimensional numeric array 

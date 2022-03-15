@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ch4Task2
+namespace Ch4Tasks
 {
     /// <summary>
     /// Write a program that creates an array of 11 integers. 

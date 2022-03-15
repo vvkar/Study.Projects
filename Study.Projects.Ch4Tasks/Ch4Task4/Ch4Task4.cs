@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ch4Task4
+namespace Ch4Tasks
 {
     /// <summary>
     /// Write a program that creates a character array with 10 elements. 
