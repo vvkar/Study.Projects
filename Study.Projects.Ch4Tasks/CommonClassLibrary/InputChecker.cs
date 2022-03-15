@@ -16,6 +16,12 @@ namespace Ch4Tasks
 
             return Console.ReadLine();
         }
+        public static string InputEnter(string message)
+        {
+            Console.Write(message);
+
+            return Console.ReadLine();
+        }
         /// <summary>
         /// Tests a string value for integer and non-negativity.
         /// </summary>
