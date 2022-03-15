@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A4C9B270-6077-4ED4-B3C7-C7D76E909309}</ProjectGuid>
+    <ProjectGuid>{DB055E7B-A8DA-4066-9DAB-E35CC681E790}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ch4Task5</RootNamespace>
-    <AssemblyName>Ch4Task5</AssemblyName>
+    <RootNamespace>Ch4Task6</RootNamespace>
+    <AssemblyName>Ch4Task6</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ch4Task5.cs" />
+    <Compile Include="Ch4Task6.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
