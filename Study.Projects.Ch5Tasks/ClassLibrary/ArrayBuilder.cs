@@ -21,6 +21,18 @@ namespace Ch5Tasks
             return array;
         }
 
+        public static char[] GenerateCharArray(int size)
+        {
+            Random random = new Random();
+            char[] array = new char[size];
+
+            for (int i = 0; i < size; i++)
+            {
+                array[i] = (char)random.Next((int)'A', (int)'z'+1);
+            }
+            return array;
+        }
+
         public static void WriteArray <T> (T [] array)
         {
             foreach(T item in array)
