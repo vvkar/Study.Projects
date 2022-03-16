@@ -32,7 +32,32 @@ namespace Ch5Tasks
                 }
                 else break;
             }
+            return result;
+        }
 
+        public static int EnterPositive(string message)
+        {
+            string errorMessage = "Incorrect input!";
+            string negativeMessage = "Your number should be positive!";
+            int result;
+            string input;
+
+            while (true)
+            {
+                Console.Write(message);
+
+                input = Console.ReadLine();
+
+                if (!int.TryParse(input, out result))
+                {
+                    Console.WriteLine(errorMessage);
+                }
+                else if (result <= 0)
+                {
+                    Console.WriteLine(negativeMessage);
+                }
+                else break;
+            }
             return result;
         }
     }
