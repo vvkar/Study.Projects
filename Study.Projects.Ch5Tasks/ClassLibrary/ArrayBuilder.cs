@@ -21,6 +21,21 @@ namespace Ch5Tasks
             return array;
         }
 
+        public static int[,] Generate2DimIntArray(int rows, int cols)
+        {
+            Random random = new Random();
+            int[,] array = new int[rows, cols];
+
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    array[i, j] = random.Next(1, 100);
+                }
+            }
+            return array;
+        }
+
         public static char[] GenerateCharArray(int size)
         {
             Random random = new Random();
@@ -38,6 +53,19 @@ namespace Ch5Tasks
             foreach(T item in array)
             {
                 Console.Write(item + "\t");
+            }
+            Console.WriteLine();
+        }
+
+        public static void WriteArray<T>(T[,] array)
+        {
+            for(int i = 0; i < array.GetLength(0); i++)
+            {
+                for(int j = 0; j < array.GetLength(1); j++)
+                {
+                    Console.Write(array[i, j] + "\t");
+                }
+                Console.WriteLine();
             }
             Console.WriteLine();
         }
