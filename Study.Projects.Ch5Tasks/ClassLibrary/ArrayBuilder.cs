@@ -69,5 +69,53 @@ namespace Ch5Tasks
             }
             Console.WriteLine();
         }
+
+        public static int[] FromToIntArrayGenerate (int from, int to)
+        {
+            int size = Math.Abs(from - to) + 1;
+
+            int [] array = new int[size];
+
+            if(from < to)
+            {
+                for (int i = 0; i < size && from <= to; i++, from++)
+                {
+                    array[i] = from;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < size && from >= to; i++, from--)
+                {
+                    array[i] = from;
+                }
+            }
+            
+            return array;
+        }
+
+        public static char[] FromToCharArrayGenerate(char from, char to)
+        {
+            int size = Math.Abs(from - to) + 1;
+
+            char[] array = new char[size];
+
+            if (from < to)
+            {
+                for (int i = 0; i < size && from <= to; i++, from++)
+                {
+                    array[i] = from;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < size && from >= to; i++, from--)
+                {
+                    array[i] = from;
+                }
+            }
+
+            return array;
+        }
     }
 }
