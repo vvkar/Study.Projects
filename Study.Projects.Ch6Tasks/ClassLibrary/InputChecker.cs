@@ -33,5 +33,33 @@ namespace Ch6Tasks
 
             return input[0];
         }
+
+        public static int EnterInteger()
+        {
+            string enterMessage = "Enter a number: ";
+            
+            return EnterInteger(enterMessage);
+        }
+
+        public static int EnterInteger(string message)
+        {
+            string errorMessage = "Incorrect input!";
+            int result;
+            string input;
+
+            while (true)
+            {
+                Console.Write(message);
+
+                input = Console.ReadLine();
+
+                if (!int.TryParse(input, out result))
+                {
+                    Console.WriteLine(errorMessage);
+                }
+                else break;
+            }
+            return result;
+        }
     }
 }
