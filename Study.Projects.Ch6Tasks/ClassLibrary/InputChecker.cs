@@ -8,6 +8,8 @@ namespace Ch6Tasks
 {
     public class InputChecker
     {
+        static string errorMessage = "Incorrect input!";
+
         public static char InputChar()
         {
             string enterMessage = "Enter any symbol: ";
@@ -43,7 +45,6 @@ namespace Ch6Tasks
 
         public static int EnterInteger(string message)
         {
-            string errorMessage = "Incorrect input!";
             int result;
             string input;
 
@@ -60,6 +61,31 @@ namespace Ch6Tasks
                 else break;
             }
             return result;
+        }
+
+        public static double EnterDouble(string message)
+        {
+            double result;
+            string input;
+            do
+            {
+                Console.Write(message);
+                input = Console.ReadLine();
+                if (!double.TryParse(input, out result))
+                {
+                    Console.WriteLine(errorMessage);
+                }
+            }
+            while (!double.TryParse(input, out result));
+
+            return result;
+        }
+
+        public static double EnterDouble()
+        {
+            string message = "Enter a real number: ";
+
+            return EnterDouble(message);
         }
     }
 }
