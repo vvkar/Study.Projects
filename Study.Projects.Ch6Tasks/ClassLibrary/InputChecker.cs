@@ -11,11 +11,17 @@ namespace Ch6Tasks
         public static char InputChar()
         {
             string enterMessage = "Enter any symbol: ";
+
+            return InputChar(enterMessage);
+        }
+
+        public static char InputChar(string message)
+        {
             string quantityError = "You input sould consist of only one symbol!";
             string input;
             do
             {
-                Console.Write(enterMessage);
+                Console.Write(message);
                 input = Console.ReadLine();
 
                 if (input.Length > 1 || input.Length == 0)
