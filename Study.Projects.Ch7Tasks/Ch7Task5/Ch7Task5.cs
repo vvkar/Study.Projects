@@ -20,7 +20,7 @@ namespace Ch7Tasks
         {
             string input = InputChecker.EnterString();
 
-            char symb = InputChecker.InputChar();
+            char symb = InputChecker.EnterChar();
 
             var result = CharSearch(input, symb);
 

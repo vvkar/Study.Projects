@@ -36,14 +36,14 @@ namespace Ch7Tasks
             return EnterString("Enter any sentence: ");
         }
 
-        public static char InputChar()
+        public static char EnterChar()
         {
             string enterMessage = "Enter any symbol: ";
 
-            return InputChar(enterMessage);
+            return EnterChar(enterMessage);
         }
 
-        public static char InputChar(string message)
+        public static char EnterChar(string message)
         {
             string quantityError = "You input sould consist of only one symbol!";
             string input;
