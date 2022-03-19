@@ -34,5 +34,31 @@ namespace Ch7Tasks
         {
             return EnterString("Enter any sentence: ");
         }
+
+        public static char InputChar()
+        {
+            string enterMessage = "Enter any symbol: ";
+
+            return InputChar(enterMessage);
+        }
+
+        public static char InputChar(string message)
+        {
+            string quantityError = "You input sould consist of only one symbol!";
+            string input;
+            do
+            {
+                Console.Write(message);
+                input = Console.ReadLine();
+
+                if (input.Length > 1 || input.Length == 0)
+                {
+                    Console.WriteLine(quantityError);
+                }
+            }
+            while (input.Length > 1 || input.Length == 0);
+
+            return input[0];
+        }
     }
 }
