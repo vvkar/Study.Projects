@@ -69,6 +69,20 @@ namespace Ch8Tasks
             return EnterInteger(enterMessage);
         }
 
+        public static int EnterIntegerMoreThenZero()
+        {
+            int result;
+
+            string enterMessage = "Enter a number more then zero: ";
+            do
+            {
+                result = EnterInteger(enterMessage);
+            }
+            while (result <= 0);
+
+            return result;
+        }
+
         public static int EnterInteger(string message)
         {
             int result;
