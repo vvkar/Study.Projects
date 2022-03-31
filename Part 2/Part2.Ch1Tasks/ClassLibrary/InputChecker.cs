@@ -112,7 +112,7 @@ namespace Ch1Tasks
             return result;
         }
 
-        public int EnterNotNegativeInteger() =>
+        public int EnterNonNegativeInteger() =>
             EnterNotNegativeInteger(enterMessage: "Enter not negative integer: ");
     }
 }
