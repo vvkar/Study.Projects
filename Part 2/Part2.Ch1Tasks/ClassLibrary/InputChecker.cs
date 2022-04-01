@@ -101,7 +101,7 @@ namespace Ch1Tasks
             return result;
         }
 
-        public int EnterNotNegativeInteger(string enterMessage)
+        public int EnterNonNegativeInteger(string enterMessage)
         {
             int result;
             do
@@ -113,6 +113,6 @@ namespace Ch1Tasks
         }
 
         public int EnterNonNegativeInteger() =>
-            EnterNotNegativeInteger(enterMessage: "Enter not negative integer: ");
+            EnterNonNegativeInteger(enterMessage: "Enter not negative integer: ");
     }
 }
