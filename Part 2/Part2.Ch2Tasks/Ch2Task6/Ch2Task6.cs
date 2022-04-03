@@ -20,7 +20,7 @@ namespace Ch2Tasks
 
             WeekdayHandler weekDayShow = () =>
             {
-                if ((int)dayOfWeek == 6)
+                if (dayOfWeek == DayOfWeek.Saturday)
                 {
                     dayOfWeek = DayOfWeek.Sunday;
                 }
