@@ -36,6 +36,13 @@ namespace Ch2Tasks
             TaskClassOne objOne = new TaskClassOne("First object!");
             TaskClassOne objTwo = new TaskClassOne("Second object!");
 
+            TaskClassTwo anotherClassObj = new TaskClassTwo();
+
+            objOne.MessageHandler += anotherClassObj.Print;
+            objTwo.MessageHandler += anotherClassObj.Print;
+
+            objOne.InvokeEvent();
+            objTwo.InvokeEvent();
         }
 
         delegate void MessageMethods(string message);
