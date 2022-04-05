@@ -14,7 +14,7 @@ class Ch6Task2
     {
         Random random = new Random();
         int number = random.Next(100);
-        int threadSleepTime = 1000;
+        int threadSleepTime = 500;
 
         Thread threadOne = new(() =>
         {
@@ -25,12 +25,13 @@ class Ch6Task2
                 {
                     Console.WriteLine($"{number} is even!");
                 }
-                Thread.Sleep(threadSleepTime/2);
+                Thread.Sleep(threadSleepTime);
             }
         });
 
         Thread threadTwo = new(() =>
         {
+            Thread.Sleep(threadSleepTime/2);
             Console.WriteLine("Thread two started!");
             while (true)
             {
@@ -38,7 +39,7 @@ class Ch6Task2
                 {
                     Console.WriteLine($"{number} is divisable by 3!");
                 }
-                Thread.Sleep(threadSleepTime/3);
+                Thread.Sleep(threadSleepTime);
             }
         });
 
@@ -48,7 +49,7 @@ class Ch6Task2
         while (true)
         {
             number = random.Next(100);
-            Thread.Sleep(threadSleepTime/5);
+            Thread.Sleep(threadSleepTime/2);
         }
     }
 }
