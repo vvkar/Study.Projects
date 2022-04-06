@@ -16,7 +16,7 @@ class Ch6Task7
         int rows = inputChecker
             .EnterIntegerMoreThenZero("Enter number of rows: ");
         int columns = inputChecker
-            .EnterIntegerMoreThenZero("Enter number of rows: ");
+            .EnterIntegerMoreThenZero("Enter number of columns: ");
 
         int[,] array = new int[rows, columns];
 
